@@ -23,6 +23,7 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
+
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -50,12 +51,17 @@ class MainWindow(QMainWindow):
         ]
 
         for widget in widgets:
-            layout.addWidget(widget())
+            if widget == QLabel:
+                layout.addWidget(QLabel("QLabel"))
+            else:
+
+                layout.addWidget(widget())
 
         central_widget = QWidget()
         central_widget.setLayout(layout)
 
         self.setCentralWidget(central_widget)
+
 
 app = QApplication(sys.argv)
 window = MainWindow()

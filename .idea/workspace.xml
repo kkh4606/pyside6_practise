@@ -1,26 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9e1a7dd-b8a8-4db4-9bc4-701894f78439" name="Changes" comment="" />
+    <list default="true" id="c9e1a7dd-b8a8-4db4-9bc4-701894f78439" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Projects/todo_app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QMouseEvent/mouse_event.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Pyside6_Desktop_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Pyside6_Desktop_App.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LayoutWidgets/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LayoutWidgets/Notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LayoutWidgets/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/LayoutWidgets/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LayoutWidgets/layout_colorwidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/LayoutWidgets/layout_colorwidget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LayoutWidgets/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/LayoutWidgets/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LayoutWidgets/remove_sharp.py" beforeDir="false" afterPath="$PROJECT_DIR$/LayoutWidgets/remove_sharp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/todo.ui" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/todo.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/todo_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/todo_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QMainWindow/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/QMainWindow/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QMainWindow/mainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/QMainWindow/mainWindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QMouseEvent/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/QMouseEvent/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QWidgets/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/QWidgets/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QWidgets/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/QWidgets/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QWidgets/rockWidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/QWidgets/rockWidget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QWidgets/widgets_.py" beforeDir="false" afterPath="$PROJECT_DIR$/QWidgets/widgets_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/file_validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/file_validator.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kkh4606&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/kkh4606/pyside6_practise.git&quot;,
+    &quot;accountId&quot;: &quot;1e540366-5334-4e51-84e8-3d998eb71c93&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="3ECWfb5rnBmb8hzoQcdAAyTp6MK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "Notification.DisplayName-DoNotAsk-Black action on save file ignored": "Black action on save file ignored",
+    "Notification.DoNotAsk-Black action on save file ignored": "true",
+    "Python.app.executor": "Run",
+    "Python.auto_map.executor": "Run",
+    "Python.auto_mapping.executor": "Run",
+    "Python.button_holder.executor": "Run",
+    "Python.digital_clock.executor": "Run",
+    "Python.file_validator.executor": "Run",
+    "Python.game.executor": "Run",
+    "Python.layout_colorwidget.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.mainWindow.executor": "Run",
+    "Python.mouse_event.executor": "Run",
+    "Python.qcheckbox.executor": "Run",
+    "Python.remove_sharp.executor": "Run",
+    "Python.rockWidget.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.todo_app.executor": "Run",
+    "Python.todo_list.executor": "Run",
+    "Python.widgets_.executor": "Run",
+    "Python.widgets_pyside6.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/Pyside6_Desktop_App",
+    "settings.editor.selected.configurable": "actions.on.save"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Pyside6_Desktop_App\Projects" />
+      <recent name="E:\Pyside6_Desktop_App\Scripts" />
+      <recent name="E:\Pyside6_Desktop_App\QMainWindow" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -37,5 +121,8 @@
       <updated>1779683135754</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.ui" />
   </component>
 </project>

@@ -56,7 +56,7 @@ class FileValidator(QWidget):
     def open_folder(self):
 
         file_path = QFileDialog.getExistingDirectory(
-            self, caption="Select folder", dir="."
+            self, caption="Select folder", dir=".."
         )
 
         base_dir = Path(file_path)

@@ -14,10 +14,19 @@ class MainWindow(QMainWindow):
 
         self.ui.version.setAlignment(Qt.AlignmentFlag.AlignRight)
 
+        self.setMouseTracking(True)
+
+        self.ui.input_box.setText("Enter your task...")
+
         self.ui.add_btn.clicked.connect(self.add_todo)
         self.ui.toggle_btn.clicked.connect(self.toggle_todo)
 
         self.ui.delete_btn.clicked.connect(self.delete_todo)
+
+    def mousePressEvent(self, e):
+        if e.button() == Qt.MouseButton.LeftButton:
+            # handle the left-button press in here
+            print("you clicked left mouse")
 
     def add_todo(self):
 
