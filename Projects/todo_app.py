@@ -34,6 +34,12 @@ class ToDo(QMainWindow):
 
         self.cur = self.conn.cursor()
 
+        self.cur.execute(
+            """CREATE TABLE IF NOT EXISTS todos (id INTEGER PRIMARY KEY ,todo TEXT,is_completed INTEGER NOT NULL DEFAULT 0)"""
+        )
+
+        self.cur = self.conn.cursor()
+
         self.cur.execute("SELECT * FROM todos")
 
         self.all_todos = self.cur.fetchall()
@@ -75,6 +81,8 @@ class ToDo(QMainWindow):
         self.search_box.setFixedSize(QSize(500, 32))
         self.search_box.setStyleSheet("""padding: 0 0 0 8px;""")
 
+        self.search_box.textChanged.connect(self.filter_items)
+
         self.search_btn = QPushButton("Search")
         self.search_btn.setFixedSize(QSize(70, 32))
 
@@ -112,6 +120,19 @@ class ToDo(QMainWindow):
 
         self.setCentralWidget(container_widget)
 
+    def filter_items(self):
+
+        for i in range(self.todos.count()):
+            item = self.todos.item(i)
+
+            if (
+                self.search_box.text() == ""
+                or self.search_box.text().lower() in item.text().lower()
+            ):
+                self.todos.setRowHidden(i, False)
+            else:
+                self.todos.setRowHidden(i, True)
+
     def add_todo(self):
         task, ok = QInputDialog.getText(
             self,
@@ -126,11 +147,13 @@ class ToDo(QMainWindow):
 
             self.todos.addItem(todo_item)
 
-            self.cur.execute(
-                f"INSERT INTO todos (todo,is_completed) VALUES (?,?)", (task, 0)
-            )
+            with self.conn:
 
-            self.conn.commit()
+                self.cur.execute(
+                    f"INSERT INTO todos (todo,is_completed) VALUES (?,?)", (task, 0)
+                )
+
+                self.conn.commit()
 
     def update_todo(self):
 
@@ -143,7 +166,9 @@ class ToDo(QMainWindow):
         if old_todos is None:
             return
 
-        update_todos, ok = QInputDialog.getText(self, "update", "")
+        update_dil = QInputDialog()
+
+        update_todos, ok = update_dil.getText(self, "update", "")
 
         if update_todos and update_todos.strip(" ") != "" and ok:
 
@@ -155,15 +180,18 @@ class ToDo(QMainWindow):
             else:
                 update_item.setCheckState(Qt.CheckState.Checked)
             self.todos.insertItem(current_row, update_item)
-            self.cur.execute(
-                "UPDATE todos SET todo=(?), is_completed=(?)",
-                (
-                    update_todos,
-                    0 if old_todos.checkState() == Qt.CheckState.Unchecked else 1,
-                ),
-            )
 
-            self.conn.commit()
+            with self.conn:
+
+                self.cur.execute(
+                    "UPDATE todos SET todo=(?), is_completed=(?)",
+                    (
+                        update_todos,
+                        0 if old_todos.checkState() == Qt.CheckState.Unchecked else 1,
+                    ),
+                )
+
+                self.conn.commit()
 
     def delete_todo(self):
         current_item = self.todos.currentRow()
@@ -172,9 +200,11 @@ class ToDo(QMainWindow):
 
         if item:
 
-            self.cur.execute("DELETE FROM todos WHERE todo=(?)", (item.text(),))
+            with self.conn:
 
-            self.conn.commit()
+                self.cur.execute("DELETE FROM todos WHERE todo=(?)", (item.text(),))
+
+                self.conn.commit()
 
         if current_item >= 0:
             self.todos.takeItem(current_item)
