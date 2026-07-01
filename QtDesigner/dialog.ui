@@ -44,7 +44,18 @@
       </widget>
      </item>
      <item row="2" column="1">
-      <widget class="QComboBox" name="comboBox"/>
+      <widget class="QComboBox" name="comboBox">
+       <item>
+        <property name="text">
+         <string>It</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>physics</string>
+        </property>
+       </item>
+      </widget>
      </item>
      <item row="3" column="0">
       <widget class="QLabel" name="label_4">
@@ -54,7 +65,18 @@
       </widget>
      </item>
      <item row="3" column="1">
-      <widget class="QComboBox" name="comboBox_2"/>
+      <widget class="QComboBox" name="comboBox_2">
+       <item>
+        <property name="text">
+         <string>hr</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>manager</string>
+        </property>
+       </item>
+      </widget>
      </item>
      <item row="4" column="0">
       <widget class="QLabel" name="label_5">
@@ -81,10 +103,10 @@
    <item>
     <widget class="QDialogButtonBox" name="buttonBox">
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Orientation::Horizontal</enum>
      </property>
      <property name="standardButtons">
-      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+      <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
      </property>
     </widget>
    </item>

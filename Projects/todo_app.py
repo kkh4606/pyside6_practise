@@ -58,6 +58,8 @@ class ToDo(QMainWindow):
 
             self.todos.addItem(todo_item)
 
+        self.todos.itemPressed.connect(self.pressed_todo)
+
         self.todos_completed = QListWidget()
 
         self.todos_completed.setStyleSheet("""font: 25px;""")
@@ -120,6 +122,10 @@ class ToDo(QMainWindow):
 
         self.setCentralWidget(container_widget)
 
+    def pressed_todo(self):
+
+        self.update_todo()
+
     def filter_items(self):
 
         for i in range(self.todos.count()):
@@ -168,7 +174,9 @@ class ToDo(QMainWindow):
 
         update_dil = QInputDialog()
 
-        update_todos, ok = update_dil.getText(self, "update", "")
+        update_todos, ok = update_dil.getText(
+            self, "update", "", QLineEdit.Normal, old_todos.text()
+        )
 
         if update_todos and update_todos.strip(" ") != "" and ok:
 

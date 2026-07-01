@@ -2,6 +2,7 @@ import sys
 
 from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton
 from PySide6.QtUiTools import QUiLoader
+from QtDesigner.dialog import Ui_Dialog
 
 loader = QUiLoader()
 
@@ -9,6 +10,9 @@ loader = QUiLoader()
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
+
+        self.ui = Ui_Dialog()
+
         btn = QPushButton("Launch dialog")
         btn.pressed.connect(self.launch_dialog)
 

@@ -2,15 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9e1a7dd-b8a8-4db4-9bc4-701894f78439" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QtDesigner/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LayoutWidgets/color_widget.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LayoutWidgets/layout_widget.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projects/images/notepad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projects/notepad.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projects/open_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projects/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QtDesigner/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QtDesigner/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/menus_tools/menus.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/menus_tools/sub_menu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multithreading/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources_system/abacus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources_system/acorn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources_system/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources_system/resources.qrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/signals_slots/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/todo.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LayoutWidgets/Notes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LayoutWidgets/abacus.png" beforeDir="false" afterPath="$PROJECT_DIR$/menus_tools/abacus.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LayoutWidgets/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/menus_tools/toolbar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LayoutWidgets/layout_colorwidget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LayoutWidgets/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LayoutWidgets/remove_sharp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/todo.db" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/todo.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projects/todo_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/todo_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QtDesigner/dialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/QtDesigner/dialog.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QtDesigner/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/QtDesigner/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,52 +71,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Notification.DisplayName-DoNotAsk-Black action on save file ignored": "Black action on save file ignored",
-    "Notification.DoNotAsk-Black action on save file ignored": "true",
-    "Python.app.executor": "Run",
-    "Python.auto_map.executor": "Run",
-    "Python.auto_mapping.executor": "Run",
-    "Python.button_holder.executor": "Run",
-    "Python.custom_dialog.executor": "Run",
-    "Python.db.executor": "Run",
-    "Python.digital_clock.executor": "Run",
-    "Python.file_validator.executor": "Run",
-    "Python.game.executor": "Run",
-    "Python.layout_colorwidget.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.mainWindow.executor": "Run",
-    "Python.main_2.executor": "Run",
-    "Python.message.executor": "Run",
-    "Python.mouse_event.executor": "Run",
-    "Python.qcheckbox.executor": "Run",
-    "Python.remove_sharp.executor": "Run",
-    "Python.rockWidget.executor": "Run",
-    "Python.schema.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.todo_app.executor": "Run",
-    "Python.todo_list.executor": "Run",
-    "Python.widgets_.executor": "Run",
-    "Python.widgets_pyside6.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/Pyside6_Desktop_App",
-    "settings.editor.selected.configurable": "actions.on.save"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-Black action on save file ignored&quot;: &quot;Black action on save file ignored&quot;,
+    &quot;Notification.DoNotAsk-Black action on save file ignored&quot;: &quot;true&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.auto_map.executor&quot;: &quot;Run&quot;,
+    &quot;Python.auto_mapping.executor&quot;: &quot;Run&quot;,
+    &quot;Python.button_holder.executor&quot;: &quot;Run&quot;,
+    &quot;Python.custom_dialog.executor&quot;: &quot;Run&quot;,
+    &quot;Python.db.executor&quot;: &quot;Run&quot;,
+    &quot;Python.digital_clock.executor&quot;: &quot;Run&quot;,
+    &quot;Python.file_validator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.game.executor&quot;: &quot;Run&quot;,
+    &quot;Python.horizontal_layout.executor&quot;: &quot;Run&quot;,
+    &quot;Python.layout_colorwidget.executor&quot;: &quot;Run&quot;,
+    &quot;Python.layout_widget.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mainWindow.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main_2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.menus.executor&quot;: &quot;Run&quot;,
+    &quot;Python.message.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mouse_event.executor&quot;: &quot;Run&quot;,
+    &quot;Python.notepad.executor&quot;: &quot;Run&quot;,
+    &quot;Python.qcheckbox.executor&quot;: &quot;Run&quot;,
+    &quot;Python.remove_sharp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rockWidget.executor&quot;: &quot;Run&quot;,
+    &quot;Python.schema.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sub_menu.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.todo_app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.todo_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python.widgets_.executor&quot;: &quot;Run&quot;,
+    &quot;Python.widgets_pyside6.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Pyside6_Desktop_App/Projects/images&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Pyside6_Desktop_App\Projects\images" />
+      <recent name="E:\Pyside6_Desktop_App\menus_tools" />
+      <recent name="E:\Pyside6_Desktop_App\resources_system" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Pyside6_Desktop_App\Projects" />
       <recent name="E:\Pyside6_Desktop_App\Scripts" />
