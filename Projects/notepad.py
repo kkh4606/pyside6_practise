@@ -1,7 +1,7 @@
 import sys
 
-from PySide6.QtCore import QEvent
-from PySide6.QtGui import QAction, QIcon
+
+from PySide6.QtGui import QAction, QIcon, QKeySequence, QGuiApplication
 from PySide6.QtWidgets import (
     QApplication,
     QMainWindow,
@@ -9,7 +9,8 @@ from PySide6.QtWidgets import (
     QTextEdit,
     QFileDialog,
     QMessageBox,
-    QDialogButtonBox,
+    QPushButton,
+    QVBoxLayout,
 )
 from pathlib import Path
 
@@ -27,6 +28,8 @@ class MainWindow(QMainWindow):
         self.is_new = False
         self.is_open = False
         self.changed = False
+        self.default_font_size = 30
+        self.selected_text = ""
 
         menu_bar = self.menuBar()
         menu_bar.setStyleSheet("""font:16px;""")
@@ -39,17 +42,23 @@ class MainWindow(QMainWindow):
 
         # file menu
         new_file = QAction("New", self)
+        new_file.setShortcut(QKeySequence("Ctrl+N"))
         new_file.triggered.connect(self.new_file)
         file_menu.addAction(new_file)
         new_window = QAction("New Window", self)
+        new_window.setShortcut(QKeySequence("Ctrl+Shift+N"))
+
         file_menu.addAction(new_window)
         open_file = QAction("Open", self)
+        open_file.setShortcut(QKeySequence("Ctrl+O"))
         open_file.triggered.connect(self.open_file)
         file_menu.addAction(open_file)
         save = QAction("Save", self)
+        save.setShortcut(QKeySequence("Ctrl+S"))
         save.triggered.connect(self.save_file)
         file_menu.addAction(save)
         save_as = QAction("Save As", self)
+        save_as.setShortcut(QKeySequence("Ctrl+Shift+N"))
         save_as.triggered.connect(self.save_as_file)
         file_menu.addAction(save_as)
 
@@ -62,14 +71,33 @@ class MainWindow(QMainWindow):
         # edit menu
 
         undo = QAction("Undo", self)
+        undo.setShortcut(QKeySequence("Ctrl+Shift+Z"))
+        undo.triggered.connect(lambda: self.text_box.undo())
         edit_menu.addAction(undo)
+
+        redo = QAction("Redo", self)
+        redo.setShortcut(QKeySequence("Ctrl+Z"))
+        redo.triggered.connect(lambda: self.text_box.redo())
+        edit_menu.addAction(redo)
         cut = QAction("Cut", self)
+        cut.setShortcut(QKeySequence("Ctrl+X"))
+        cut.triggered.connect(lambda: self.text_box.cut())
         edit_menu.addAction(cut)
         copy = QAction("Copy", self)
+        copy.setShortcut(QKeySequence("Ctrl+C"))
+        copy.triggered.connect(lambda: self.text_box.copy())
         edit_menu.addAction(copy)
         paste = QAction("Paste", self)
+        paste.setShortcut(QKeySequence("Ctrl+V"))
+        paste.triggered.connect(lambda: self.text_box.paste())
         edit_menu.addAction(paste)
         delete = QAction("Delete", self)
+        delete.triggered.connect(
+            lambda: self.text_box.setText(
+                self.text_box.toPlainText().replace(self.selected_text, "")
+            )
+        )
+        delete.setShortcut(QKeySequence("Del"))
         edit_menu.addAction(delete)
 
         edit_menu.addSeparator()
@@ -87,22 +115,30 @@ class MainWindow(QMainWindow):
 
         edit_menu.addSeparator()
 
-        select_all = QAction(QIcon(""), "Select All", self)
+        select_all = QAction("Select All", self)
         edit_menu.addAction(select_all)
 
-        time_date = QAction(QIcon(""), "Time/Date", self)
+        time_date = QAction("Time/Date", self)
         edit_menu.addAction(time_date)
 
         # format menu
-        font = QAction(QIcon(""), "Font", self)
+        font = QAction("Font", self)
         format_menu.addAction(font)
 
         # view menu
         zoom = view_menu.addMenu("Zoom")
 
         zoom_in = QAction("Zoom in", self)
+        zoom_in.triggered.connect(self.zoom_in)
+
+        zoom_in.setShortcut(QKeySequence("Ctrl+-"))
+
         zoom_out = QAction("Zoom out", self)
+        zoom_out.triggered.connect(self.zoom_out)
+        zoom_out.setShortcut(QKeySequence("Ctrl+="))
         default = QAction("Restore Default Zoom", self)
+        default.triggered.connect(self.default_zoom)
+        default.setShortcut(QKeySequence("Ctrl+0"))
         zoom.addAction(zoom_in)
         zoom.addAction(zoom_out)
         zoom.addAction(default)
@@ -120,10 +156,23 @@ class MainWindow(QMainWindow):
         help_menu.addAction(about)
 
         self.text_box = QTextEdit()
-        self.text_box.setStyleSheet("""font:18px;""")
+        self.text_box.setStyleSheet(f"font:{self.default_font_size}px;")
         self.text_box.textChanged.connect(self.text_changed)
+        self.text_box.selectionChanged.connect(self.selection_changed)
 
         self.setCentralWidget(self.text_box)
+
+    def zoom_in(self):
+        self.default_font_size -= 2
+        self.text_box.setStyleSheet(f"font:{self.default_font_size}px;")
+
+    def zoom_out(self):
+        self.default_font_size += 2
+        self.text_box.setStyleSheet(f"font:{self.default_font_size}px;")
+
+    def default_zoom(self):
+        self.default_font_size = 18
+        self.text_box.setStyleSheet(f"font:{self.default_font_size}px;")
 
     def text_changed(self):
         self.changed = True
@@ -164,6 +213,10 @@ class MainWindow(QMainWindow):
         self.text_box.setText("")
         self.setWindowTitle("Untitled-Notepad")
 
+    def show_new_window(self):
+
+        self.new_window.show()
+
     def open_file(self):
 
         if self.text_box.toPlainText() != "":
@@ -189,12 +242,8 @@ class MainWindow(QMainWindow):
                         self.save_file()
 
                 except PermissionError:
-                    QMessageBox.critical(
-                        self,
-                        "Error",
-                        "No permission to save this file",
-                        QMessageBox.Ok,
-                    )
+                    pass
+
             elif btn == QMessageBox.Cancel:
                 self.open()
             else:
@@ -221,7 +270,7 @@ class MainWindow(QMainWindow):
             else:
 
                 self.setWindowTitle(f"{file_path.name}-Notepad")
-            self.file_path = file_path
+                self.file_path = file_path
 
             with open(file_path, "r", encoding="UTF-8") as f:
                 text = f.read()
@@ -295,7 +344,7 @@ class MainWindow(QMainWindow):
         if self.changed and self.file_path:
             dlg = QMessageBox(self)
             dlg.setWindowTitle("Notepad")
-            dlg.setText("Do you want to save Changes to  Untitled ?")
+            dlg.setText("Do you want to save Changes to Untitled ?")
             dlg.setStandardButtons(QMessageBox.Save | QMessageBox.Cancel)
 
             btn = dlg.exec()
@@ -337,6 +386,10 @@ class MainWindow(QMainWindow):
                     self.close()
             else:
                 self.close()
+
+    def selection_changed(self):
+        text = self.text_box.textCursor().selectedText()
+        self.selected_text = text
 
 
 app = QApplication(sys.argv)
