@@ -1,16 +1,9 @@
 import sys
-from PySide6.QtCore import QSize
+
 from PySide6.QtWidgets import (
     QApplication,
     QMainWindow,
     QPushButton,
-    QDialog,
-    QLineEdit,
-    QHBoxLayout,
-    QGridLayout,
-    QDialogButtonBox,
-    QVBoxLayout,
-    QLabel,
 )
 
 from custom_dialog import CustomDialog
@@ -33,24 +26,6 @@ class MainWindow(QMainWindow):
             print("success")
         else:
             print("cancel")
-        # dlg = QDialog(self)
-        # dlg.setWindowTitle("Hello")
-        #
-        # QBtn = QDialogButtonBox.Ok | QDialogButtonBox.Cancel
-        #
-        # self.btn_box = QDialogButtonBox(QBtn)
-        # self.btn_box.accepted.connect(self.accept)
-        # self.btn_box.rejected.connect((self.reject))
-        #
-        # layout = QVBoxLayout()
-        #
-        # message = QLabel("Something happened, is that OK?")
-        # layout.addWidget(message)
-        # layout.addWidget(self.btn_box)
-        #
-        # dlg.setLayout(layout)
-        #
-        # dlg.exec()
 
 
 app = QApplication(sys.argv)

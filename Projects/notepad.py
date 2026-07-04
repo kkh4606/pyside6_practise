@@ -1,18 +1,20 @@
 import sys
 
 
-from PySide6.QtGui import QAction, QIcon, QKeySequence, QGuiApplication
+from PySide6.QtGui import QAction, QIcon, QKeySequence, QGuiApplication, QTextCursor
 from PySide6.QtWidgets import (
     QApplication,
     QMainWindow,
-    QWidget,
     QTextEdit,
     QFileDialog,
     QMessageBox,
+    QWidget,
     QPushButton,
     QVBoxLayout,
 )
 from pathlib import Path
+
+from Projects.find_dialog import FindDialog
 
 
 class MainWindow(QMainWindow):
@@ -28,11 +30,17 @@ class MainWindow(QMainWindow):
         self.is_new = False
         self.is_open = False
         self.changed = False
-        self.default_font_size = 30
+        self.default_font_size = 18
         self.selected_text = ""
+        self.f_dialog = FindDialog()
+
+        self.search_input = self.f_dialog.input
+        self.search_btn = self.f_dialog.find_btn
+
+        self.search_btn.clicked.connect(self.search_text)
 
         menu_bar = self.menuBar()
-        menu_bar.setStyleSheet("""font:16px;""")
+        menu_bar.setStyleSheet("""font:14px;""")
 
         file_menu = menu_bar.addMenu("File")
         edit_menu = menu_bar.addMenu("Edit")
@@ -79,31 +87,37 @@ class MainWindow(QMainWindow):
         redo.setShortcut(QKeySequence("Ctrl+Z"))
         redo.triggered.connect(lambda: self.text_box.redo())
         edit_menu.addAction(redo)
-        cut = QAction("Cut", self)
-        cut.setShortcut(QKeySequence("Ctrl+X"))
-        cut.triggered.connect(lambda: self.text_box.cut())
-        edit_menu.addAction(cut)
-        copy = QAction("Copy", self)
-        copy.setShortcut(QKeySequence("Ctrl+C"))
-        copy.triggered.connect(lambda: self.text_box.copy())
-        edit_menu.addAction(copy)
+        self.cut = QAction("Cut", self)
+
+        self.cut.setShortcut(QKeySequence("Ctrl+X"))
+        self.cut.triggered.connect(lambda: self.text_box.cut())
+        edit_menu.addAction(self.cut)
+        self.copy = QAction("Copy", self)
+        self.copy.setDisabled(True)
+        self.copy.setShortcut(QKeySequence("Ctrl+C"))
+        self.copy.triggered.connect(lambda: self.text_box.copy())
+        edit_menu.addAction(self.copy)
         paste = QAction("Paste", self)
         paste.setShortcut(QKeySequence("Ctrl+V"))
         paste.triggered.connect(lambda: self.text_box.paste())
         edit_menu.addAction(paste)
-        delete = QAction("Delete", self)
-        delete.triggered.connect(
+        self.delete = QAction("Delete", self)
+        self.delete.setDisabled(True)
+        self.delete.triggered.connect(
             lambda: self.text_box.setText(
                 self.text_box.toPlainText().replace(self.selected_text, "")
             )
         )
-        delete.setShortcut(QKeySequence("Del"))
-        edit_menu.addAction(delete)
+        self.delete.setShortcut(QKeySequence("Del"))
+        edit_menu.addAction(self.delete)
 
         edit_menu.addSeparator()
 
-        find = QAction("Find", self)
-        edit_menu.addAction(find)
+        self.find = QAction("Find", self)
+        self.find.setDisabled(True)
+
+        self.find.triggered.connect(self.show_dialog)
+        edit_menu.addAction(self.find)
         find_next = QAction("Find Next", self)
         edit_menu.addAction(find_next)
         find_parev = QAction("Find Previous", self)
@@ -135,6 +149,7 @@ class MainWindow(QMainWindow):
 
         zoom_out = QAction("Zoom out", self)
         zoom_out.triggered.connect(self.zoom_out)
+
         zoom_out.setShortcut(QKeySequence("Ctrl+="))
         default = QAction("Restore Default Zoom", self)
         default.triggered.connect(self.default_zoom)
@@ -162,6 +177,38 @@ class MainWindow(QMainWindow):
 
         self.setCentralWidget(self.text_box)
 
+    def show_dialog(self):
+
+        self.f_dialog.show()
+
+    def search_text(self):
+        text = self.search_input.text().lower()
+
+        if text in self.text_box.toPlainText().lower():
+
+            start = self.text_box.toPlainText().lower().index(text)
+
+            end = None
+
+            if len(text) == 0:
+                return
+
+            if len(text) == 1:
+                end = start + 1
+
+            if len(text) > 1:
+                end = start + len(text)
+
+            cursor = self.text_box.textCursor()
+
+            cursor.setPosition(start)
+
+            cursor.setPosition(end, QTextCursor.MoveMode.KeepAnchor)
+
+            self.text_box.setTextCursor(cursor)
+
+            self.search_input.setText("")
+
     def zoom_in(self):
         self.default_font_size -= 2
         self.text_box.setStyleSheet(f"font:{self.default_font_size}px;")
@@ -176,6 +223,11 @@ class MainWindow(QMainWindow):
 
     def text_changed(self):
         self.changed = True
+
+        if self.text_box.toPlainText():
+            self.find.setDisabled(False)
+        else:
+            self.find.setDisabled(True)
 
         window_title = self.windowTitle()
         if window_title == "Untitled-Notepad":
@@ -309,15 +361,7 @@ class MainWindow(QMainWindow):
                 with open(self.file_path, "w", encoding="UTF-8") as f:
                     f.write(self.text_box.toPlainText())
         except PermissionError:
-
-            msg_box = QMessageBox(self)
-
-            msg_box.critical(
-                self,
-                "Permission Error",
-                "No permission to perform requested action",
-                QMessageBox.Ok,
-            )
+            return
 
     def save_as_file(self):
 
@@ -361,12 +405,8 @@ class MainWindow(QMainWindow):
                         self.save_file()
 
                 except PermissionError:
-                    QMessageBox.critical(
-                        self,
-                        "Error",
-                        "No permission to save this file",
-                        QMessageBox.Ok,
-                    )
+                    return
+
             elif btn == QMessageBox.Cancel:
                 self.close()
         else:
@@ -390,6 +430,12 @@ class MainWindow(QMainWindow):
     def selection_changed(self):
         text = self.text_box.textCursor().selectedText()
         self.selected_text = text
+
+        for action in [self.copy, self.cut, self.delete]:
+            if text:
+                action.setDisabled(False)
+            else:
+                action.setDisabled(True)
 
 
 app = QApplication(sys.argv)

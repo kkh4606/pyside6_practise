@@ -5,7 +5,7 @@ from PySide6.QtWidgets import (
     QVBoxLayout,
     QListWidgetItem,
 )
-from Projects.db import conn, cur
+
 
 from PySide6.QtCore import Qt
 
@@ -28,20 +28,20 @@ class CustomDialog(QDialog):
 
     def add_todo(self):
         task = self.todo.text()
-
-        try:
-
-            cur.execute(
-                f"INSERT INTO todos (todo,is_completed) VALUES (?,?)", (task, 0)
-            )
-
-            all_todos = cur.fetchall()
-            print(all_todos)
-
-            conn.commit()
-            conn.close()
-
-        except Exception as e:
-            print(e)
-        else:
-            print("success")
+        #
+        # try:
+        #
+        #     cur.execute(
+        #         f"INSERT INTO todos (todo,is_completed) VALUES (?,?)", (task, 0)
+        #     )
+        #
+        #     all_todos = cur.fetchall()
+        #     print(all_todos)
+        #
+        #     conn.commit()
+        #     conn.close()
+        #
+        # except Exception as e:
+        #     print(e)
+        # else:
+        #     print("success")
