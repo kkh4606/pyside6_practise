@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9e1a7dd-b8a8-4db4-9bc4-701894f78439" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Projects/find_dialog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/highlighter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projects/replace_dialgo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dialogs_and_Alerts/custom_dialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dialogs_and_Alerts/custom_dialog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dialogs_and_Alerts/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dialogs_and_Alerts/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projects/notepad.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/notepad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +78,7 @@
     "Python.notepad.executor": "Run",
     "Python.qcheckbox.executor": "Run",
     "Python.remove_sharp.executor": "Run",
+    "Python.replace_dialgo.executor": "Run",
     "Python.rockWidget.executor": "Run",
     "Python.schema.executor": "Run",
     "Python.sub_menu.executor": "Run",
@@ -93,7 +91,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "test",
     "last_opened_file_path": "E:/Pyside6_Desktop_App",
     "settings.editor.selected.configurable": "actions.on.save"
   },

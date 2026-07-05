@@ -15,6 +15,7 @@ from PySide6.QtWidgets import (
 from pathlib import Path
 
 from Projects.find_dialog import FindDialog
+from Projects.replace_dialgo import ReplaceDialog
 
 
 class MainWindow(QMainWindow):
@@ -33,6 +34,7 @@ class MainWindow(QMainWindow):
         self.default_font_size = 18
         self.selected_text = ""
         self.f_dialog = FindDialog()
+        self.r_dialog = ReplaceDialog()
 
         self.search_input = self.f_dialog.input
         self.search_btn = self.f_dialog.find_btn
@@ -116,13 +118,14 @@ class MainWindow(QMainWindow):
         self.find = QAction("Find", self)
         self.find.setDisabled(True)
 
-        self.find.triggered.connect(self.show_dialog)
+        self.find.triggered.connect(self.show_f_dialog)
         edit_menu.addAction(self.find)
         find_next = QAction("Find Next", self)
         edit_menu.addAction(find_next)
         find_parev = QAction("Find Previous", self)
         edit_menu.addAction(find_parev)
         replace = QAction("Replace", self)
+        replace.triggered.connect(self.show_r_dialog)
         edit_menu.addAction(replace)
         go_to = QAction("Go To", self)
         edit_menu.addAction(go_to)
@@ -177,9 +180,13 @@ class MainWindow(QMainWindow):
 
         self.setCentralWidget(self.text_box)
 
-    def show_dialog(self):
+    def show_f_dialog(self):
 
         self.f_dialog.show()
+
+    def show_r_dialog(self):
+
+        self.r_dialog.show()
 
     def search_text(self):
         text = self.search_input.text().lower()
