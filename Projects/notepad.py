@@ -8,9 +8,6 @@ from PySide6.QtWidgets import (
     QTextEdit,
     QFileDialog,
     QMessageBox,
-    QWidget,
-    QPushButton,
-    QVBoxLayout,
 )
 from pathlib import Path
 
@@ -35,6 +32,16 @@ class MainWindow(QMainWindow):
         self.selected_text = ""
         self.f_dialog = FindDialog()
         self.r_dialog = ReplaceDialog()
+
+        self.search_qline_text = self.r_dialog.s_input
+        self.replace_qline_text = self.r_dialog.r_input
+
+        self.find_btn = self.r_dialog.find_btn
+        self.replace_btn = self.r_dialog.r_btn
+        self.replace_btn.clicked.connect(self.replace)
+
+        self.f_next = self.r_dialog.find_btn
+        self.f_next.clicked.connect(self.search_next)
 
         self.search_input = self.f_dialog.input
         self.search_btn = self.f_dialog.find_btn
@@ -188,6 +195,38 @@ class MainWindow(QMainWindow):
 
         self.r_dialog.show()
 
+    def replace(self):
+        if self.search_qline_text.text() not in self.text_box.toPlainText():
+
+            dlg = QMessageBox(self)
+            dlg.setWindowTitle("Notepad")
+            dlg.setText(f'Cannot find "{self.search_qline_text.text()}"')
+            dlg.setStandardButtons(QMessageBox.Ok)
+
+            dlg.setIcon(QMessageBox.Icon.Information)
+
+            dlg.exec()
+
+            return
+
+        cursor = self.text_box.textCursor()
+
+        start_index = self.text_box.toPlainText().index(self.replace_qline_text.text())
+
+        end_index = start_index + len(self.replace_qline_text.text())
+
+        update_text = self.text_box.toPlainText().replace(
+            self.search_qline_text.text(), self.replace_qline_text.text()
+        )
+
+        self.text_box.setText(update_text)
+
+        cursor.setPosition(start_index)
+
+        cursor.setPosition(end_index, QTextCursor.MoveMode.KeepAnchor)
+
+        self.text_box.setTextCursor(cursor)
+
     def search_text(self):
         text = self.search_input.text().lower()
 
@@ -215,6 +254,34 @@ class MainWindow(QMainWindow):
             self.text_box.setTextCursor(cursor)
 
             self.search_input.setText("")
+
+    def search_next(self):
+        print("you click find next")
+
+        text = self.search_qline_text.text().lower()
+
+        if text in self.text_box.toPlainText().lower():
+
+            start = self.text_box.toPlainText().lower().index(text)
+
+            end = None
+
+            if len(text) == 0:
+                return
+
+            if len(text) == 1:
+                end = start + 1
+
+            if len(text) > 1:
+                end = start + len(text)
+
+            cursor = self.text_box.textCursor()
+
+            cursor.setPosition(start)
+
+            cursor.setPosition(end, QTextCursor.MoveMode.KeepAnchor)
+
+            self.text_box.setTextCursor(cursor)
 
     def zoom_in(self):
         self.default_font_size -= 2

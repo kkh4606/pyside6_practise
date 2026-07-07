@@ -9,10 +9,7 @@ from PySide6.QtWidgets import (
     QPushButton,
     QVBoxLayout,
     QGridLayout,
-    QHBoxLayout,
     QCheckBox,
-    QRadioButton,
-    QApplication,
     QFormLayout,
 )
 
@@ -23,18 +20,18 @@ class ReplaceDialog(QWidget):
 
         self.setWindowTitle("Replace")
 
-        self.setFixedSize(QSize(400,200))
+        self.setFixedSize(QSize(400, 200))
 
-        self.input = QLineEdit()
-
+        self.s_input = QLineEdit()
         self.r_input = QLineEdit()
 
         form_layout = QFormLayout()
-        form_layout.addRow(QLabel("Find what"), self.input)
+        form_layout.addRow(QLabel("Find what"), self.s_input)
         form_layout.addRow(QLabel("Replace with"), self.r_input)
 
         self.find_btn = QPushButton("Find Next")
         self.r_btn = QPushButton("Replace")
+
         self.r_all_btn = QPushButton("Replace All")
         self.cancel_btn = QPushButton("Cancel")
 
@@ -64,11 +61,3 @@ class ReplaceDialog(QWidget):
         layout.addLayout(check_layout, 2, 0)
 
         self.setLayout(layout)
-
-
-app = QApplication(sys.argv)
-
-window = ReplaceDialog()
-window.show()
-
-app.exec()

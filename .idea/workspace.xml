@@ -2,10 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9e1a7dd-b8a8-4db4-9bc4-701894f78439" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Projects/replace_dialgo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/layout_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/layout_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/layout_4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/layout_colorwidget.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/signals_and_slots_1d.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/signals_and_slots_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/signals_and_slots_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/signals_and_slots_4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/widgets_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/widgets_2a.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/widgets_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/widgets_4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/widgets_5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/widgets_6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/widgets_7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/widgets_8.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/widgets_9.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projects/notepad.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/notepad.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/replace_dialgo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/replace_dialgo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +84,9 @@
     "Python.game.executor": "Run",
     "Python.highlighter.executor": "Run",
     "Python.horizontal_layout.executor": "Run",
+    "Python.layout_1.executor": "Run",
+    "Python.layout_3.executor": "Run",
+    "Python.layout_4.executor": "Run",
     "Python.layout_colorwidget.executor": "Run",
     "Python.layout_widget.executor": "Run",
     "Python.main.executor": "Run",
@@ -81,17 +101,30 @@
     "Python.replace_dialgo.executor": "Run",
     "Python.rockWidget.executor": "Run",
     "Python.schema.executor": "Run",
+    "Python.signals_and_slots_1d.executor": "Run",
+    "Python.signals_and_slots_2.executor": "Run",
+    "Python.signals_and_slots_3.executor": "Run",
+    "Python.signals_and_slots_4.executor": "Run",
     "Python.sub_menu.executor": "Run",
     "Python.test.executor": "Run",
     "Python.todo_app.executor": "Run",
     "Python.todo_list.executor": "Run",
     "Python.widgets_.executor": "Run",
+    "Python.widgets_1.executor": "Run",
+    "Python.widgets_2a.executor": "Run",
+    "Python.widgets_3.executor": "Run",
+    "Python.widgets_4.executor": "Run",
+    "Python.widgets_5.executor": "Run",
+    "Python.widgets_6.executor": "Run",
+    "Python.widgets_7.executor": "Run",
+    "Python.widgets_8.executor": "Run",
+    "Python.widgets_9.executor": "Run",
     "Python.widgets_pyside6.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "test",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "E:/Pyside6_Desktop_App",
     "settings.editor.selected.configurable": "actions.on.save"
   },
@@ -108,6 +141,7 @@
       <recent name="E:\Pyside6_Desktop_App\resources_system" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Pyside6_Desktop_App\Lessons\basic" />
       <recent name="E:\Pyside6_Desktop_App\Projects" />
       <recent name="E:\Pyside6_Desktop_App\Scripts" />
       <recent name="E:\Pyside6_Desktop_App\QMainWindow" />
