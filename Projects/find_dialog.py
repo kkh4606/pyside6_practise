@@ -12,10 +12,11 @@ from PySide6.QtWidgets import (
     QHBoxLayout,
     QCheckBox,
     QRadioButton,
+    QDialog,
 )
 
 
-class FindDialog(QWidget):
+class FindDialog(QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
 

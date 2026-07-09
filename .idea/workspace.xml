@@ -2,27 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9e1a7dd-b8a8-4db4-9bc4-701894f78439" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/layout_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/layout_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/layout_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/layout_colorwidget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/signals_and_slots_1d.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/signals_and_slots_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/signals_and_slots_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/signals_and_slots_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/widgets_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/widgets_2a.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/widgets_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/widgets_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/widgets_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/widgets_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/widgets_7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/widgets_8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/widgets_9.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/dialogs_2a.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/icons/abacus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/icons/acorn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/icons/address-book--arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/icons/address-book-blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/icons/address-book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/toolbar_and_menus_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/toolbars_and_menus_7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/dialogs_start.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projects/notepad.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/notepad.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projects/replace_dialgo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/replace_dialgo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +69,8 @@
     "Python.button_holder.executor": "Run",
     "Python.custom_dialog.executor": "Run",
     "Python.db.executor": "Run",
+    "Python.dialogs_2a.executor": "Run",
+    "Python.dialogs_start.executor": "Run",
     "Python.digital_clock.executor": "Run",
     "Python.file_validator.executor": "Run",
     "Python.find_dialog.executor": "Run",
@@ -109,6 +102,8 @@
     "Python.test.executor": "Run",
     "Python.todo_app.executor": "Run",
     "Python.todo_list.executor": "Run",
+    "Python.toolbar_and_menus_1.executor": "Run",
+    "Python.toolbars_and_menus_7.executor": "Run",
     "Python.widgets_.executor": "Run",
     "Python.widgets_1.executor": "Run",
     "Python.widgets_2a.executor": "Run",
@@ -125,7 +120,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/Pyside6_Desktop_App",
+    "last_opened_file_path": "E:/Pyside6_Desktop_App/Lessons/basic/icons",
     "settings.editor.selected.configurable": "actions.on.save"
   },
   "keyToStringList": {
@@ -136,6 +131,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Pyside6_Desktop_App\Lessons\basic\icons" />
       <recent name="E:\Pyside6_Desktop_App\Projects\images" />
       <recent name="E:\Pyside6_Desktop_App\menus_tools" />
       <recent name="E:\Pyside6_Desktop_App\resources_system" />

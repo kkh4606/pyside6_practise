@@ -11,10 +11,11 @@ from PySide6.QtWidgets import (
     QGridLayout,
     QCheckBox,
     QFormLayout,
+    QDialog,
 )
 
 
-class ReplaceDialog(QWidget):
+class ReplaceDialog(QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
 

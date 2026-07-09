@@ -30,8 +30,8 @@ class MainWindow(QMainWindow):
         self.changed = False
         self.default_font_size = 18
         self.selected_text = ""
-        self.f_dialog = FindDialog()
-        self.r_dialog = ReplaceDialog()
+        self.f_dialog = FindDialog(self)
+        self.r_dialog = ReplaceDialog(self)
 
         self.search_qline_text = self.r_dialog.s_input
         self.replace_qline_text = self.r_dialog.r_input
