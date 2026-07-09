@@ -1,7 +1,7 @@
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton, QDialog
 
-from Lessons.basic.dialogs_2a import CustomDialog
+from Lessons.basic.dialogs_2 import CustomDialog
 
 
 class MainWindow(QMainWindow):
