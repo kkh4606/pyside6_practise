@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9e1a7dd-b8a8-4db4-9bc4-701894f78439" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/dialog_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/dialog_file_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/dialogs_file_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/dialogs_file_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/dialogs_input_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/dialogs_input_instance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projects/my_game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lessons/basic/dialogs_2a.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/dialogs_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lessons/dialogs_start.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/dialogs_start.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/dialogs_file_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/dialogs_file_3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +84,7 @@
     "Python.menus.executor": "Run",
     "Python.message.executor": "Run",
     "Python.mouse_event.executor": "Run",
+    "Python.my_game.executor": "Run",
     "Python.notepad.executor": "Run",
     "Python.qcheckbox.executor": "Run",
     "Python.remove_sharp.executor": "Run",

@@ -93,13 +93,12 @@ class MainWindow(QMainWindow):
                 if write_confirmed == QMessageBox.Yes:
                     flag = True
 
-                else:
-                    flag = False
-
             else:
 
                 flag = True
             if flag:
+
+                print("this code processed...")
 
                 with open(filename, "w") as f:
                     f.write("File content new text testing v2 ...")
