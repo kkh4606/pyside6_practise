@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9e1a7dd-b8a8-4db4-9bc4-701894f78439" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Projects/my_game.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lessons/basic/dialog_file_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projects/tic_tac_toe.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lessons/basic/dialogs_file_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/dialogs_file_3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/dialogs_start.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/dialogs_start.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/day.png" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/images/day.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/night.png" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/images/night.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/todo_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/todo_app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +65,7 @@
     "Python.custom_dialog.executor": "Run",
     "Python.db.executor": "Run",
     "Python.dialog_4.executor": "Run",
+    "Python.dialog_file_2.executor": "Run",
     "Python.dialogs_2a.executor": "Run",
     "Python.dialogs_file_1.executor": "Run",
     "Python.dialogs_file_3.executor": "Run",
@@ -97,6 +102,7 @@
     "Python.signals_and_slots_4.executor": "Run",
     "Python.sub_menu.executor": "Run",
     "Python.test.executor": "Run",
+    "Python.tic_tac_toe.executor": "Run",
     "Python.todo_app.executor": "Run",
     "Python.todo_list.executor": "Run",
     "Python.toolbar_and_menus_1.executor": "Run",
@@ -134,6 +140,7 @@
       <recent name="E:\Pyside6_Desktop_App\resources_system" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Pyside6_Desktop_App\Projects\images" />
       <recent name="E:\Pyside6_Desktop_App\Lessons\basic" />
       <recent name="E:\Pyside6_Desktop_App\Projects" />
       <recent name="E:\Pyside6_Desktop_App\Scripts" />

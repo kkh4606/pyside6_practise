@@ -91,7 +91,7 @@ class ToDo(QMainWindow):
         self.btn_toggle = QPushButton()
         self.btn_toggle.setStyleSheet("""border: none;""")
 
-        self.btn_toggle.setIcon(QIcon("day.png"))
+        self.btn_toggle.setIcon(QIcon("images/day.png"))
         self.btn_toggle.setFixedSize(QSize(32, 32))
         self.btn_toggle.setIconSize(QSize(32, 32))
 
@@ -220,11 +220,11 @@ class ToDo(QMainWindow):
 
     def toggle_theme(self):
         if self.theme == "day_mode":
-            self.btn_toggle.setIcon(QIcon("night.png"))
+            self.btn_toggle.setIcon(QIcon("images/night.png"))
             self.theme = "night_mode"
 
         else:
-            self.btn_toggle.setIcon(QIcon("day.png"))
+            self.btn_toggle.setIcon(QIcon("images/day.png"))
             self.theme = "day_mode"
 
         self.setStyleSheet(
