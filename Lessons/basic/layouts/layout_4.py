@@ -1,5 +1,4 @@
 import sys
-from PySide6.QtCore import Qt
 from PySide6.QtWidgets import (
     QApplication,
     QMainWindow,
@@ -7,7 +6,7 @@ from PySide6.QtWidgets import (
     QWidget,
     QHBoxLayout,
 )
-from Lessons.basic.layout_colorwidget import Color
+from Lessons.basic.layouts.layout_colorwidget import Color
 
 
 class MainWindow(QMainWindow):

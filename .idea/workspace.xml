@@ -2,7 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9e1a7dd-b8a8-4db4-9bc4-701894f78439" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Projects/tic_tac_toe.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/tic_tac_toe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dialogs_and_Alerts/custom_dialog.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dialogs_and_Alerts/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dialogs_and_Alerts/message.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dialogs_and_Alerts/todo.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LayoutWidgets/color_widget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LayoutWidgets/layout_widget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/dialog_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/dialogs/dialog_4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/dialog_file_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/dialogs/dialog_file_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/dialog_file_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/dialogs/dialog_file_4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/dialogs_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/dialogs/dialogs_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/dialogs_file_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/dialogs/dialogs_file_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/dialogs_file_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/dialogs/dialogs_file_3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/dialogs_input_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/dialogs/dialogs_input_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/dialogs_input_instance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/dialogs/dialogs_input_instance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/dialogs_start.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/dialogs/dialogs_start.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/layout_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/layouts/layout_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/layout_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/layouts/layout_3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/layout_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/layouts/layout_4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/layout_colorwidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/layouts/layout_colorwidget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/signals_and_slots_1d.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/signals_and_slots/signals_and_slots_1d.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/signals_and_slots_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/signals_and_slots/signals_and_slots_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/signals_and_slots_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/signals_and_slots/signals_and_slots_3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/signals_and_slots_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/signals_and_slots/signals_and_slots_4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/toolbar_and_menus_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/toolsbar/toolbar_and_menus_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/toolbars_and_menus_7.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/toolsbar/toolbars_and_menus_7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/widgets_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/widgets/widgets_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/widgets_2a.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/widgets/widgets_2a.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/widgets_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/widgets/widgets_3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/widgets_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/widgets/widgets_4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/widgets_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/widgets/widgets_5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/widgets_6.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/widgets/widgets_6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/widgets_7.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/widgets/widgets_7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/widgets_8.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/widgets/widgets_8.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/widgets_9.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/widgets/widgets_9.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QMainWindow/icon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QMainWindow/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QMainWindow/mainWindow.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QMouseEvent/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QMouseEvent/mouse_event.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QWidgets/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QWidgets/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QWidgets/otje.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QWidgets/rockWidget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QWidgets/widgets_.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QtDesigner/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QtDesigner/database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QtDesigner/dialog.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QtDesigner/dialog.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QtDesigner/employee.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QtDesigner/layout-labels.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QtDesigner/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QtDesigner/test_resource.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/additional_windows/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/additional_windows/main_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menus_tools/abacus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menus_tools/menus.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menus_tools/sub_menu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menus_tools/toolbar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/multithreading/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources_system/abacus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources_system/acorn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources_system/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources_system/resources.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources_system/resources.qrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources_system/test_resource.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signals_slots/main.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

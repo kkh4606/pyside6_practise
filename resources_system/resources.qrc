@@ -1,7 +1,0 @@
-<RCC>
-  <qresource prefix="icons">
-    <file alias="abacus.png">abacus.png</file>
-    <file alias="acorn.png">acorn.png</file>
-  </qresource>
-  <qresource prefix="newPrefix"/>
-</RCC>

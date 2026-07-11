@@ -28,7 +28,7 @@ class MainWindow(QMainWindow):
         self.addToolBar(toolbar)
 
         self.btn_action = QAction(
-            QIcon(os.path.join(base_dir, "icons", "acorn.png")), "bnt1", self
+            QIcon(os.path.join(base_dir, "../icons", "acorn.png")), "bnt1", self
         )
         toolbar.setIconSize(QSize(16, 16))
 
@@ -41,7 +41,7 @@ class MainWindow(QMainWindow):
         toolbar.addSeparator()
 
         self.btn_action2 = QAction(
-            QIcon(os.path.join(base_dir, "icons", "abacus.png")), "btn2", self
+            QIcon(os.path.join(base_dir, "../icons", "abacus.png")), "btn2", self
         )
 
         toolbar.setIconSize(QSize(16, 16))

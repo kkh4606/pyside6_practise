@@ -1,12 +1,7 @@
 import sys
+from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton
 
-from PySide6.QtWidgets import (
-    QApplication,
-    QMainWindow,
-    QPushButton,
-)
-
-from custom_dialog import CustomDialog
+from Lessons.basic.dialogs.dialogs_2 import CustomDialog
 
 
 class MainWindow(QMainWindow):
@@ -14,18 +9,15 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.setWindowTitle("My App")
 
-        btn = QPushButton("click me for a dialog")
+        btn = QPushButton("Press me for a dialog")
         btn.clicked.connect(self.btn_clicked)
+
         self.setCentralWidget(btn)
 
     def btn_clicked(self, s):
 
         dlg = CustomDialog(self)
-
-        if dlg.exec():
-            print("success")
-        else:
-            print("cancel")
+        dlg.exec()
 
 
 app = QApplication(sys.argv)

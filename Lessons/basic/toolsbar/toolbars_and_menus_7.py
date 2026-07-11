@@ -30,7 +30,7 @@ class MainWindow(QMainWindow):
         file_menu.addAction(btn_action)
 
         btn_action2 = QAction(
-            QIcon(os.path.join(base_dir, "icons", "acorn")), "New", self
+            QIcon(os.path.join(base_dir, "../icons", "acorn")), "New", self
         )
         btn_action2.setStatusTip("btn2")
         file_submenu = file_menu.addMenu("New")
