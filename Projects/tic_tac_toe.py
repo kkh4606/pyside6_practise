@@ -104,8 +104,18 @@ class TicTacToe(QMainWindow):
         )
 
         btn_restart = QPushButton("Restart")
+        btn_restart.setMinimumHeight(40)
+
+        btn_restart.setStyleSheet(
+            "border-radius:5px;border:1px solid grey;background-color:green;color:white;font:18px;"
+        )
         btn_restart.clicked.connect(self.restart)
+
         btn_exit = QPushButton("Exit")
+        btn_exit.setMinimumHeight(40)
+        btn_exit.setStyleSheet(
+            "border-radius:5px;border:1px solid grey;background-color:red;color:white;font:18px;"
+        )
         btn_exit.clicked.connect(self.close)
 
         gird_layout.addWidget(self.btn_0, 0, 0)
@@ -183,13 +193,22 @@ class TicTacToe(QMainWindow):
 
                 self.times += 1
 
-        winner = self.check_winner()
+        if self.times == 9 and not self.check_winner():
+            QMessageBox.information(self, "result", f"Match ends in a Draw!!")
 
-        if winner:
+        if self.times >= 5:
 
-            for button in self.all_buttons:
-                button.setEnabled(False)
-            QMessageBox.information(self, "result", f"{winner} win!")
+            print(self.times)
+
+            print("start checking winner ...")
+
+            winner = self.check_winner()
+
+            if winner:
+
+                for button in self.all_buttons:
+                    button.setEnabled(False)
+                QMessageBox.information(self, "result", f"{winner} win!")
 
     def check_winner(self):
 
