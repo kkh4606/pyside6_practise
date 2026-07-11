@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9e1a7dd-b8a8-4db4-9bc4-701894f78439" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/dialog_file_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projects/tic_tac_toe.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lessons/dialogs_start.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/dialogs_start.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/day.png" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/images/day.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/night.png" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/images/night.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projects/todo_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/todo_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/tic_tac_toe.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/tic_tac_toe.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,87 +46,87 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Notification.DisplayName-DoNotAsk-Black action on save file ignored": "Black action on save file ignored",
-    "Notification.DoNotAsk-Black action on save file ignored": "true",
-    "Python.app.executor": "Run",
-    "Python.auto_map.executor": "Run",
-    "Python.auto_mapping.executor": "Run",
-    "Python.button_holder.executor": "Run",
-    "Python.custom_dialog.executor": "Run",
-    "Python.db.executor": "Run",
-    "Python.dialog_4.executor": "Run",
-    "Python.dialog_file_2.executor": "Run",
-    "Python.dialogs_2a.executor": "Run",
-    "Python.dialogs_file_1.executor": "Run",
-    "Python.dialogs_file_3.executor": "Run",
-    "Python.dialogs_input_1.executor": "Run",
-    "Python.dialogs_input_instance.executor": "Run",
-    "Python.dialogs_start.executor": "Run",
-    "Python.digital_clock.executor": "Run",
-    "Python.file_validator.executor": "Run",
-    "Python.find_dialog.executor": "Run",
-    "Python.game.executor": "Run",
-    "Python.highlighter.executor": "Run",
-    "Python.horizontal_layout.executor": "Run",
-    "Python.layout_1.executor": "Run",
-    "Python.layout_3.executor": "Run",
-    "Python.layout_4.executor": "Run",
-    "Python.layout_colorwidget.executor": "Run",
-    "Python.layout_widget.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.mainWindow.executor": "Run",
-    "Python.main_2.executor": "Run",
-    "Python.menus.executor": "Run",
-    "Python.message.executor": "Run",
-    "Python.mouse_event.executor": "Run",
-    "Python.my_game.executor": "Run",
-    "Python.notepad.executor": "Run",
-    "Python.qcheckbox.executor": "Run",
-    "Python.remove_sharp.executor": "Run",
-    "Python.replace_dialgo.executor": "Run",
-    "Python.rockWidget.executor": "Run",
-    "Python.schema.executor": "Run",
-    "Python.signals_and_slots_1d.executor": "Run",
-    "Python.signals_and_slots_2.executor": "Run",
-    "Python.signals_and_slots_3.executor": "Run",
-    "Python.signals_and_slots_4.executor": "Run",
-    "Python.sub_menu.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.tic_tac_toe.executor": "Run",
-    "Python.todo_app.executor": "Run",
-    "Python.todo_list.executor": "Run",
-    "Python.toolbar_and_menus_1.executor": "Run",
-    "Python.toolbars_and_menus_7.executor": "Run",
-    "Python.widgets_.executor": "Run",
-    "Python.widgets_1.executor": "Run",
-    "Python.widgets_2a.executor": "Run",
-    "Python.widgets_3.executor": "Run",
-    "Python.widgets_4.executor": "Run",
-    "Python.widgets_5.executor": "Run",
-    "Python.widgets_6.executor": "Run",
-    "Python.widgets_7.executor": "Run",
-    "Python.widgets_8.executor": "Run",
-    "Python.widgets_9.executor": "Run",
-    "Python.widgets_pyside6.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/Pyside6_Desktop_App/Lessons/basic/icons",
-    "settings.editor.selected.configurable": "actions.on.save"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-Black action on save file ignored&quot;: &quot;Black action on save file ignored&quot;,
+    &quot;Notification.DoNotAsk-Black action on save file ignored&quot;: &quot;true&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.auto_map.executor&quot;: &quot;Run&quot;,
+    &quot;Python.auto_mapping.executor&quot;: &quot;Run&quot;,
+    &quot;Python.button_holder.executor&quot;: &quot;Run&quot;,
+    &quot;Python.custom_dialog.executor&quot;: &quot;Run&quot;,
+    &quot;Python.db.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dialog_4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dialog_file_2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dialogs_2a.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dialogs_file_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dialogs_file_3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dialogs_input_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dialogs_input_instance.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dialogs_start.executor&quot;: &quot;Run&quot;,
+    &quot;Python.digital_clock.executor&quot;: &quot;Run&quot;,
+    &quot;Python.file_validator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.find_dialog.executor&quot;: &quot;Run&quot;,
+    &quot;Python.game.executor&quot;: &quot;Run&quot;,
+    &quot;Python.highlighter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.horizontal_layout.executor&quot;: &quot;Run&quot;,
+    &quot;Python.layout_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.layout_3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.layout_4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.layout_colorwidget.executor&quot;: &quot;Run&quot;,
+    &quot;Python.layout_widget.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mainWindow.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main_2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.menus.executor&quot;: &quot;Run&quot;,
+    &quot;Python.message.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mouse_event.executor&quot;: &quot;Run&quot;,
+    &quot;Python.my_game.executor&quot;: &quot;Run&quot;,
+    &quot;Python.notepad.executor&quot;: &quot;Run&quot;,
+    &quot;Python.qcheckbox.executor&quot;: &quot;Run&quot;,
+    &quot;Python.remove_sharp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.replace_dialgo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rockWidget.executor&quot;: &quot;Run&quot;,
+    &quot;Python.schema.executor&quot;: &quot;Run&quot;,
+    &quot;Python.signals_and_slots_1d.executor&quot;: &quot;Run&quot;,
+    &quot;Python.signals_and_slots_2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.signals_and_slots_3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.signals_and_slots_4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sub_menu.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tic_tac_toe.executor&quot;: &quot;Run&quot;,
+    &quot;Python.todo_app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.todo_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python.toolbar_and_menus_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.toolbars_and_menus_7.executor&quot;: &quot;Run&quot;,
+    &quot;Python.widgets_.executor&quot;: &quot;Run&quot;,
+    &quot;Python.widgets_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.widgets_2a.executor&quot;: &quot;Run&quot;,
+    &quot;Python.widgets_3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.widgets_4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.widgets_5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.widgets_6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.widgets_7.executor&quot;: &quot;Run&quot;,
+    &quot;Python.widgets_8.executor&quot;: &quot;Run&quot;,
+    &quot;Python.widgets_9.executor&quot;: &quot;Run&quot;,
+    &quot;Python.widgets_pyside6.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Pyside6_Desktop_App/Lessons/basic/icons&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Pyside6_Desktop_App\Lessons\basic\icons" />

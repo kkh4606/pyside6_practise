@@ -136,7 +136,7 @@ class TicTacToe(QMainWindow):
         self.times = 0
         self.tie = False
 
-        self.board = ["", "", "", "", "", "", "", "", ""]
+        self.board = [""] * 9
 
         self.all_buttons = [
             self.btn_0,
@@ -152,11 +152,16 @@ class TicTacToe(QMainWindow):
 
     def restart(self):
 
-        self.board = ["", "", "", "", "", "", "", "", ""]
+        self.board = [""] * 9
 
         for button in self.all_buttons:
             button.setEnabled(True)
             button.setText("")
+
+            self.p1_turn = True
+            self.p2_turn = False
+            self.times = 0
+            self.tie = False
 
     def btn_click(self, btn: QPushButton, pos: int):
 
