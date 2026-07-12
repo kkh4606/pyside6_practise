@@ -1,6 +1,5 @@
 import sys
 
-from PySide6.QtCore import qIsNaN
 from PySide6.QtWidgets import (
     QApplication,
     QMainWindow,
