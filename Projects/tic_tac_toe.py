@@ -193,13 +193,13 @@ class TicTacToe(QMainWindow):
                 self.times += 1
 
         if self.times == 9 and not self.check_winner():
-            QMessageBox.information(self, "result", f"Match ends in a Draw!!")
+            QMessageBox.information(self, "result", "Game Over")
 
         if self.times >= 5:
 
             print(self.times)
 
-            print("start checking winner ...")
+            
 
             winner = self.check_winner()
 
