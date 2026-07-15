@@ -1,0 +1,8 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="icons">
+        <file alias="plus.png">icons/plus.png</file>
+        <file alias="minus.png">icons/minus.png</file>
+        <file alias="arrow-curve-180.png">icons/arrow-curve-180.png</file>
+    </qresource>
+</RCC>

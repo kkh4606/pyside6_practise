@@ -17,16 +17,19 @@ def auto_assign_map(path: str) -> None:
         for team in league.iterdir():
 
             for kit in team.iterdir():
-                if kit.name == "g1":
+                if kit.name != "g1":
+                    return
 
-                    for team_id in kit.iterdir():
+                for team_id in kit.iterdir():
 
-                        match = re.search(regex, team_id.name)
+                    match = re.search(regex, team_id.name)
 
-                        if match:
-                            kit_team_format = f"{match.group().lstrip('0')}, {league.name}\\{team.name}\n"
-                            leagues[league.name][int(match.group())] = kit_team_format
-                            break
+                    if match:
+                        kit_team_format = (
+                            f"{match.group().lstrip('0')}, {league.name}\\{team.name}\n"
+                        )
+                        leagues[league.name][int(match.group())] = kit_team_format
+                        break
     try:
 
         with open("map.txt", "a", encoding="UTF-8") as f:

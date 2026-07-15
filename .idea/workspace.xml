@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9e1a7dd-b8a8-4db4-9bc4-701894f78439" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/events/events_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/events/events_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/events/events_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/events/events_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/qt_designer/compiled_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/qt_designer/example_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/qt_designer/example_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/qt_designer/example_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lessons/basic/windows/windows_1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/qt_designer/compiled_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/qt_designer/compiled_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/qt_designer/resources.qrc" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/qt_designer/resources.qrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/resources/qresource.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/resources/qresource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/resources/resources.qrc" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/resources/resources.qrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/themes/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/themes/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/themes/palette_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/themes/palette_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lessons/basic/themes/palette_test_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lessons/basic/themes/palette_test_01.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projects/tic_tac_toe.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/tic_tac_toe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/auto_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/auto_map.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +102,10 @@
     "Python.mouse_event.executor": "Run",
     "Python.my_game.executor": "Run",
     "Python.notepad.executor": "Run",
+    "Python.palette_test.executor": "Run",
+    "Python.palette_test_01.executor": "Run",
     "Python.qcheckbox.executor": "Run",
+    "Python.qresource.executor": "Run",
     "Python.remove_sharp.executor": "Run",
     "Python.replace_dialgo.executor": "Run",
     "Python.rockWidget.executor": "Run",
@@ -135,8 +137,8 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/Pyside6_Desktop_App/Lessons/basic/icons",
+    "git-widget-placeholder": "f84bb58e",
+    "last_opened_file_path": "E:/Pyside6_Desktop_App/Lessons/basic/resources/icons",
     "settings.editor.selected.configurable": "actions.on.save"
   },
   "keyToStringList": {
@@ -147,17 +149,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Pyside6_Desktop_App\Lessons\basic\resources\icons" />
       <recent name="E:\Pyside6_Desktop_App\Lessons\basic\icons" />
       <recent name="E:\Pyside6_Desktop_App\Projects\images" />
       <recent name="E:\Pyside6_Desktop_App\menus_tools" />
       <recent name="E:\Pyside6_Desktop_App\resources_system" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Pyside6_Desktop_App\Lessons\basic\resources\icons" />
+      <recent name="E:\Pyside6_Desktop_App\Lessons\basic\resources" />
       <recent name="E:\Pyside6_Desktop_App\Lessons\basic\widgets" />
       <recent name="E:\Pyside6_Desktop_App\Lessons\basic\toolsbar" />
       <recent name="E:\Pyside6_Desktop_App\Lessons\basic\signals_and_slots" />
-      <recent name="E:\Pyside6_Desktop_App\Lessons\basic\layouts" />
-      <recent name="E:\Pyside6_Desktop_App\Lessons\basic\dialogs" />
     </key>
   </component>
   <component name="SharedIndexes">

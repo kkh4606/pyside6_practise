@@ -1,5 +1,5 @@
 import sys
-
+from PySide6.QtCore import Qt, QSize
 from PySide6.QtWidgets import (
     QApplication,
     QMainWindow,
@@ -9,6 +9,7 @@ from PySide6.QtWidgets import (
     QMessageBox,
     QVBoxLayout,
     QHBoxLayout,
+    QLabel,
 )
 
 MAX_HEIGHT = 140
@@ -22,7 +23,29 @@ class TicTacToe(QMainWindow):
         self.setWindowTitle("Tic Tac Toe")
         self.setMaximumHeight(300)
 
+        self.p1_turn = True
+        self.p2_turn = False
+        self.times = 0
+        self.tie = False
+
+        self.board = [""] * 9
+
+        self.result = QLabel("")
+        self.result.setText("X turn")
+        self.result.setStyleSheet("font:bold;")
+        result_font = self.result.font()
+        result_font.setPointSize(20)
+        self.result.setFont(result_font)
+        self.result.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.new_game = QPushButton("New Game")
+        self.new_game.clicked.connect(self.restart)
+        self.new_game.setMaximumWidth(100)
+
         main_layout = QVBoxLayout()
+
+        top_layout = QGridLayout()
+        top_layout.addWidget(self.result, 0, 3)
+        top_layout.addWidget(self.new_game, 1, 3)
 
         gird_layout = QGridLayout()
         gird_layout.setContentsMargins(20, 20, 20, 20)
@@ -102,21 +125,6 @@ class TicTacToe(QMainWindow):
             f"border:2px solid grey;border-left: none;border-top:none;border-bottom:none;border-right:none;font:{FONT_SIZE}px;"
         )
 
-        btn_restart = QPushButton("Restart")
-        btn_restart.setMinimumHeight(40)
-
-        btn_restart.setStyleSheet(
-            "border-radius:5px;border:1px solid grey;background-color:green;color:white;font:18px;"
-        )
-        btn_restart.clicked.connect(self.restart)
-
-        btn_exit = QPushButton("Exit")
-        btn_exit.setMinimumHeight(40)
-        btn_exit.setStyleSheet(
-            "border-radius:5px;border:1px solid grey;background-color:red;color:white;font:18px;"
-        )
-        btn_exit.clicked.connect(self.close)
-
         gird_layout.addWidget(self.btn_0, 0, 0)
         gird_layout.addWidget(self.btn_1, 0, 1)
         gird_layout.addWidget(self.btn_2, 0, 2)
@@ -129,8 +137,7 @@ class TicTacToe(QMainWindow):
         gird_layout.addWidget(self.btn_7, 2, 1)
         gird_layout.addWidget(self.btn_8, 2, 2)
 
-        bottom_layout.addWidget(btn_restart)
-        bottom_layout.addWidget(btn_exit)
+        main_layout.addLayout(top_layout)
 
         main_layout.addLayout(gird_layout)
         main_layout.addLayout(bottom_layout)
@@ -139,13 +146,6 @@ class TicTacToe(QMainWindow):
         container_widget.setLayout(main_layout)
 
         self.setCentralWidget(container_widget)
-
-        self.p1_turn = True
-        self.p2_turn = False
-        self.times = 0
-        self.tie = False
-
-        self.board = [""] * 9
 
         self.all_buttons = [
             self.btn_0,
@@ -166,6 +166,7 @@ class TicTacToe(QMainWindow):
         for button in self.all_buttons:
             button.setEnabled(True)
             button.setText("")
+            self.result.setText("X turn")
 
             self.p1_turn = True
             self.p2_turn = False
@@ -179,6 +180,7 @@ class TicTacToe(QMainWindow):
             if not btn.text():
                 self.board[pos] = "X"
                 btn.setText("X")
+                self.result.setText("O turn")
 
                 self.p2_turn, self.p1_turn = self.p1_turn, self.p2_turn
                 self.times += 1
@@ -187,6 +189,7 @@ class TicTacToe(QMainWindow):
             if not btn.text():
                 self.board[pos] = "O"
                 btn.setText("O")
+                self.result.setText("X turn")
 
                 self.p1_turn, self.p2_turn = self.p2_turn, self.p1_turn
 
@@ -199,15 +202,13 @@ class TicTacToe(QMainWindow):
 
             print(self.times)
 
-            
-
             winner = self.check_winner()
 
             if winner:
 
                 for button in self.all_buttons:
                     button.setEnabled(False)
-                QMessageBox.information(self, "result", f"{winner} win!")
+                self.result.setText(f"{winner} Win")
 
     def check_winner(self):
 
@@ -220,7 +221,7 @@ class TicTacToe(QMainWindow):
         elif self.board[1] == self.board[4] == self.board[7]:
             return self.board[1]
 
-        elif self.board[2] == self.board[5] == self.board[6]:
+        elif self.board[2] == self.board[4] == self.board[6]:
             return self.board[2]
         elif self.board[0] == self.board[4] == self.board[8]:
             return self.board[0]
